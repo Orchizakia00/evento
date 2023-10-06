@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "Event Planning",
+      "description": "Comprehensive event planning services tailored to your fitness event needs. From venue selection to logistics, we've got it all covered.",
+      "longDescription": "Our event planning service goes above and beyond to create unforgettable fitness experiences. We meticulously plan every detail, from arranging fitness demos to coordinating guest speakers. Our goal is to make your event seamless and memorable for both participants and attendees. Let us handle the complexities while you focus on inspiring and engaging your audience.",
+      "price": "$1000 onwards",
+      "image": "https://i.ibb.co/HND2gdH/event-planning-clock-word-notepad-white-computer-desk-98974324.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Fitness Workshops",
+      "description": "Engaging workshops led by fitness experts covering various topics, including nutrition, workout routines, and mental well-being.",
+      "longDescription": "Our fitness workshops are designed to educate, inspire, and empower participants. Led by renowned fitness experts, these workshops delve deep into topics like customized workout routines, mindful eating, and mental resilience. Participants not only gain valuable knowledge but also practical skills to enhance their fitness journey. Join us for an immersive learning experience.",
+      "price": "$500 per workshop",
+      "image": "https://i.ibb.co/M6Dm6k5/GFI-main.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Customized Fitness Challenges",
+      "description": "Create unique fitness challenges tailored to your audience. We handle the setup, rules, and tracking of participant progress.",
+      "longDescription": "Our customized fitness challenges are a perfect way to engage your community. Whether it's a step challenge, a virtual race, or a team-based competition, we handle all the logistics. From creating engaging challenges to providing real-time progress tracking, we ensure participants stay motivated and connected throughout the challenge period. Let's make fitness fun and rewarding together.",
+      "price": "$700 per challenge",
+      "image": "https://i.ibb.co/tX5sLGZ/Fitness-Trends.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Fitness Expo Management",
+      "description": "Full-service management for fitness expos, including exhibitor coordination, stage setup, ticketing, and attendee engagement.",
+      "longDescription": "Managing a fitness expo can be overwhelming, but not with us by your side. Our experienced team handles everything, from coordinating exhibitors to setting up engaging stages and organizing interactive sessions. We ensure smooth ticketing, seamless attendee experiences, and maximum exhibitor satisfaction. Let's make your fitness expo a grand success.",
+      "price": "$1500 onwards",
+      "image": "https://i.ibb.co/Wgz5pwX/1670647446-ad8758ae-0a64-4d3b-b9cb-455c048cb3b2.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Health and Wellness Retreats",
+      "description": "Organize rejuvenating retreats focused on fitness, wellness, and relaxation. We handle accommodations, activities, and mindful experiences.",
+      "longDescription": "Escape the hustle and bustle with our health and wellness retreats. Immerse yourself in rejuvenating activities, wellness workshops, and mindful experiences. From yoga and meditation sessions to outdoor adventures and spa treatments, our retreats offer a perfect balance of relaxation and fitness. Join us for a transformative retreat and rediscover your well-being.",
+      "price": "$2000 per person",
+      "image": "https://i.ibb.co/g7qXrXr/Thailand-Wellness-Retreats.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Fitness Event Marketing",
+      "description": "Strategic marketing services to promote your fitness event. Utilize social media, email campaigns, and online advertising to reach a wider audience.",
+      "longDescription": "Effective marketing is the key to a successful fitness event. Our marketing services are tailored to your event's unique needs. From engaging social media campaigns to targeted email marketing and compelling online advertisements, we ensure your event reaches a wider audience. Let's create buzz, drive registrations, and make your fitness event a talked-about success.",
+      "price": "$800 onwards",
+      "image": "https://i.ibb.co/5KKcKQ7/theme-workout.jpg"
+    }
+  ]
+  
