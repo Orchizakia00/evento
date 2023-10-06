@@ -23,7 +23,8 @@ import Services from "../Pages/Services/Services";
             },
             {
                 path: '/services',
-                element: <Services></Services>
+                element: <Services></Services>,
+                loader: () => fetch('/data.json')
             },
             {
                 path: '/about',
