@@ -9,7 +9,8 @@ const Service = ({ service }) => {
     const { title, description, image, id } = service;
 
     return (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="card card-compact w-96 bg-base-100 shadow-xl"
+            data-aos="flip-left">
             <figure><img src={image} alt="Shoes" className="h-64 w-full" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>

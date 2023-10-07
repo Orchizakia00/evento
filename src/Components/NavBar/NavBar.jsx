@@ -40,7 +40,7 @@ const NavBar = () => {
             <div className="navbar-end">
                 {
                     user ? <>
-                        <span className=" text-black">{user.displayName}</span>
+                        <span className=" text-black">{user.email}</span>
                         <button onClick={handleLogout} className="btn normal-case">Log Out</button>
                     </>
 

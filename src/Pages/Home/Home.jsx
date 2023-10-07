@@ -26,12 +26,14 @@ const Home = () => {
                 <h2 className="text-4xl font-bold text-center mt-10 mb-20">Upcoming Events</h2>
 
                 <div className="flex flex-col lg:flex-row w-full mx-auto justify-center">
-                    <div className="grid h-fit card bg-base-300 rounded-box place-items-center lg:w-1/4 p-8">
+                    <div className="grid h-fit card bg-base-300 rounded-box place-items-center lg:w-1/4 p-8"
+                            data-aos="fade-right">
                         <h2 className="font-bold text-lg mb-2">Fitness Workshop</h2>
                         <p className="">This workshop will be lead by fitness experts covering various topics, including nutrition, workout routines, and mental well-being. You are cordially invited.</p>
                     </div>
                     <div className="divider divider-horizontal"></div>
-                    <div className="grid h-fit card bg-base-300 rounded-box place-items-center lg:w-1/4 p-8 mt-2">
+                    <div className="grid h-fit card bg-base-300 rounded-box place-items-center lg:w-1/4 p-8 mt-2"
+                            data-aos="fade-left">
                         <ul>
                             <li><span className="font-bold">Location: </span>Dhaka</li>
                             <hr className="w-1/2" />
@@ -47,12 +49,14 @@ const Home = () => {
                 </div>
 
                 <div className="flex flex-col lg:flex-row w-full mx-auto justify-center mt-8">
-                    <div className="grid h-fit card bg-base-300 rounded-box place-items-center lg:w-1/4 p-8">
+                    <div className="grid h-fit card bg-base-300 rounded-box place-items-center lg:w-1/4 p-8"
+                            data-aos="fade-right">
                         <h2 className="font-bold text-lg mb-2">Health and Wellness Retreats</h2>
                         <p className="">Organize rejuvenating retreats focused on fitness, wellness, and relaxation. We handle accommodations, activities, and mindful experiences.</p>
                     </div>
                     <div className="divider divider-horizontal"></div>
-                    <div className="grid h-fit card bg-base-300 rounded-box place-items-center lg:w-1/4 p-8 mt-2">
+                    <div className="grid h-fit card bg-base-300 rounded-box place-items-center lg:w-1/4 p-8 mt-2"
+                            data-aos="fade-left">
                         <ul>
                             <li><span className="font-bold">Location: </span>Jashore</li>
                             <hr className="w-1/2" />
