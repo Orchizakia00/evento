@@ -1,20 +1,34 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
 
-    const { signInUser } = useContext(AuthContext);
+    const { signInUser, signInWithGoogle } = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const handleLogin = e => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log( email, password);
+        console.log(email, password);
 
         signInUser(email, password)
             .then(result => {
                 console.log(result.user);
+                navigate('/');
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    }
+
+    const handleGoogleSignIn = () => {
+        signInWithGoogle()
+            .then(result => {
+                console.log(result.user);
+                navigate('/');
             })
             .catch(error => {
                 console.error(error);
@@ -49,6 +63,9 @@ const Login = () => {
                         </div>
                     </form>
                     <p className="mx-auto mb-4">Do not have an account? Please <Link to={'/register'}><span className="font-bold text-blue-500">Register</span></Link></p>
+                    <p className="text-center"><button onClick={handleGoogleSignIn} className="btn btn-ghost normal-case">
+                        <FcGoogle />
+                        Log in with Google</button></p>
                 </div>
             </div>
         </div>
