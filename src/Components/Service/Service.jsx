@@ -13,7 +13,7 @@ const Service = ({ service }) => {
                 <h2 className="card-title">{title}</h2>
                 <p>{description}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-success normal-case w-full mt-4">Read More</button>
+                    <button className="btn btn-success normal-case w-full mt-4 text-white">Read More</button>
                 </div>
             </div>
         </div>

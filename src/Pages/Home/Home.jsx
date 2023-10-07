@@ -18,7 +18,7 @@ const Home = () => {
             </div>
             <div className="text-center mb-10">
                 <Link to={'/services'}>
-                    <button className="btn btn-info">See all</button>
+                    <button className="btn btn-info text-white">See all</button>
                 </Link>
             </div>
         </div>

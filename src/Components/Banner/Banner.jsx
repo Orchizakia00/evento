@@ -16,7 +16,7 @@ const Banner = () => {
                     <p className="py-6 text-white ">
                         Discover expert-led workouts, tailored training plans, and nutritious recipes. Whether you are a beginner or an enthusiast, we are here to guide you. Join our community, embrace a healthier lifestyle, and unlock your potential. Start your fitness journey today
                     </p>
-                    <button className="btn btn-info normal-case">Get Started</button>
+                    <button className="btn btn-info normal-case text-white">Get Started</button>
                 </div>
             </div>
         </div>
