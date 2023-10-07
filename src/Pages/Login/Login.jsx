@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
+import swal from "sweetalert";
 
 const Login = () => {
 
@@ -18,6 +19,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 navigate('/');
+                swal("Great!", "Logged In Successfully!", "success");
             })
             .catch(error => {
                 console.error(error);
@@ -29,6 +31,7 @@ const Login = () => {
             .then(result => {
                 console.log(result.user);
                 navigate('/');
+                swal("Great!", "Logged In Successfully!", "success");
             })
             .catch(error => {
                 console.error(error);
