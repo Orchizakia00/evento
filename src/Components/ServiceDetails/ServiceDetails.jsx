@@ -24,7 +24,7 @@ const ServiceDetails = () => {
 
     return (
         <div className="my-10 mx-auto container w-3/4">
-            <div className="card card-side bg-base-100 shadow-xl">
+            <div className="card lg:card-side bg-base-100 shadow-xl">
                 <figure className="w-full"><img src={service.image} className="h-full" alt="Movie" /></figure>
                 <div className="card-body">
                     <h2 className="card-title text-3xl font-bold">{service.title}</h2>
