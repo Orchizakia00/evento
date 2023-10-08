@@ -46,9 +46,11 @@ const NavBar = () => {
                 {
                     user ? <>
                         <span className="mr-2">{user.displayName}</span>
-                        <div className="rounded-full w-10'">
-                            <img src={user.photo} alt="" />
-                        </div>
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
+                            <div className="w-10 rounded-full">
+                                <img src={user.photo} alt={user.photo} className="" />
+                            </div>
+                        </label>
                         <button onClick={handleLogout} className="btn normal-case">Log Out</button>
                     </>
 
