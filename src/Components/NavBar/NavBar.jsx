@@ -17,6 +17,11 @@ const NavBar = () => {
         <li className="mr-6"><NavLink to={'/'}>Home</NavLink></li>
         <li className="mr-6"><NavLink to={'/about'}>About</NavLink></li>
         <li className="mr-6"><NavLink to={'/services'}>Services</NavLink></li>
+        {
+            user && <>
+                <li className="mr-6"><NavLink to={'/profile'}>Profile</NavLink></li>
+            </>
+        }
     </>
 
     return (
@@ -40,7 +45,10 @@ const NavBar = () => {
             <div className="navbar-end">
                 {
                     user ? <>
-                        <span className=" text-black">{user.email}</span>
+                        <span className="mr-2">{user.displayName}</span>
+                        <div className="rounded-full w-10'">
+                            <img src={user.photo} alt="" />
+                        </div>
                         <button onClick={handleLogout} className="btn normal-case">Log Out</button>
                     </>
 

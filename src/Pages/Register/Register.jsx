@@ -5,15 +5,16 @@ import swal from "sweetalert";
 
 const Register = () => {
 
-    const { createUser } = useContext(AuthContext);
+    const { createUser, handleUpdate } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
         const name = e.target.name.value;
+        const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(name, email, password);
+        console.log(name, photo, email, password);
 
         if (password.length < 6) {
             swal("Error!", "Password should be at least 6 characters or longer", "error");
@@ -24,10 +25,15 @@ const Register = () => {
             return;
         }
 
-        createUser( email, password)
+        createUser(email, password)
             .then(result => {
+                handleUpdate(name, photo)
+                    .then(() => {
+                        swal("Great!", "User created Successfully!", "success");
+
+                        navigate('/');
+                    })
                 console.log(result.user);
-                navigate('/');
             })
             .catch(error => {
                 console.error(error);
@@ -35,7 +41,7 @@ const Register = () => {
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200 my-12">
+        <div className="hero py-20 bg-base-200 my-12">
             <div className="">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold mb-10 text-center">Register now!</h1>
@@ -47,6 +53,12 @@ const Register = () => {
                                 <span className="label-text">Name</span>
                             </label>
                             <input type="text" placeholder="name" name="name" className="input input-bordered" required />
+                        </div>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Photo</span>
+                            </label>
+                            <input type="text" placeholder="photo" name="photo" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
