@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import swal from "sweetalert";
-import { updateProfile } from "firebase/auth";
 
 const Register = () => {
 

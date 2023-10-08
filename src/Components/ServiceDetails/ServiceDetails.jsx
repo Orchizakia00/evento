@@ -25,13 +25,13 @@ const ServiceDetails = () => {
     return (
         <div className="my-10 mx-auto container w-3/4">
             <div className="card lg:card-side bg-base-100 shadow-xl">
-                <figure className="w-full"><img src={service.image} className="h-full" alt="Movie" /></figure>
+                <figure className="w-full" data-aos="fade-right"><img src={service.image} className="h-full" alt="Movie" /></figure>
                 <div className="card-body">
-                    <h2 className="card-title text-3xl font-bold">{service.title}</h2>
-                    <p>{service.longDescription}</p>
-                    <p className="my-4"><span className="font-bold">Price:</span> {service.price}</p>
+                    <h2 className="card-title text-3xl font-bold" data-aos="fade-up">{service.title}</h2>
+                    <p data-aos="fade-up">{service.longDescription}</p>
+                    <p className="my-4"  data-aos="fade-up"><span className="font-bold">Price:</span> {service.price}</p>
                     <div className="card-actions justify-start">
-                        <button onClick={handleBook} className="btn btn-success text-white">Book Us</button>
+                        <button onClick={handleBook} className="btn btn-success text-white" data-aos="fade-up">Book Us</button>
                     </div>
                 </div>
             </div>

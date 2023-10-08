@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
@@ -8,6 +8,7 @@ const Login = () => {
 
     const { signInUser, signInWithGoogle } = useContext(AuthContext);
     const navigate = useNavigate();
+    const [error, setError] = useState("");
 
     const handleLogin = e => {
         e.preventDefault();
@@ -22,7 +23,8 @@ const Login = () => {
                 swal("Great!", "Logged In Successfully!", "success");
             })
             .catch(error => {
-                console.error(error);
+                setError(error.message);
+                swal("Error!", "Invalid Email or Password!", "error");
             })
     }
 
@@ -65,6 +67,8 @@ const Login = () => {
                             <button className="btn btn-info text-white">Login</button>
                         </div>
                     </form>
+
+                    <p className="mb-6"> {error} </p>
                     <p className="mx-auto mb-4">Do not have an account? Please <Link to={'/register'}><span className="font-bold text-blue-500">Register</span></Link></p>
                     <p className="text-center"><button onClick={handleGoogleSignIn} className="btn btn-ghost normal-case">
                         <FcGoogle />
