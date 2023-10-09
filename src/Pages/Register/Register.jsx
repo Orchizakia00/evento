@@ -20,10 +20,11 @@ const Register = () => {
             swal("Error!", "Password should be at least 6 characters or longer", "error");
             return;
         }
-        else if (!/[A-Z]/.test(password)) {
-            swal("Error!", "Your password should have at least one upper case characters.", "error");
+        else if (!(/[A-Z]/.test(password) && /[!@#$%^&*(),.?":{}|<>]/.test(password))) {
+            swal("Error!", "Your password should have at least one uppercase letter and a special character.", "error");
             return;
         }
+
 
         createUser(email, password)
             .then(result => {

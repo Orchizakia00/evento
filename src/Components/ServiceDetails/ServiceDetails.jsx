@@ -10,23 +10,7 @@ const ServiceDetails = () => {
     console.log(service, id);
 
     const handleBook = () => {
-        // swal("Great!", "Your booking is confirmed!", "success");
-
-        const bookedArray = [];
-
-        const bookedItems = JSON.parse(localStorage.getItem('booked'));
-
-        if (!bookedItems) {
-            bookedArray.push(services)
-            localStorage.setItem('booked', JSON.stringify(bookedArray))
-            swal("Congratulations!", "You have booked successfully!", "success");
-            // console.log('clicked');
-        }
-        else {
-            bookedArray.push(...bookedItems, services);
-            localStorage.setItem('booked', JSON.stringify(bookedArray))
-            swal("Congratulations!", "You have booked successfully!", "success");
-        }
+        swal("Great!", "Your booking is confirmed!", "success");
     }
 
 
