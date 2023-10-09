@@ -20,6 +20,7 @@ const NavBar = () => {
         {
             user && <>
                 <li className="mr-6"><NavLink to={'/profile'}>Profile</NavLink></li>
+                <li className="mr-6"><NavLink to={'/dashboard'}>Dashboard</NavLink></li>
             </>
         }
     </>
