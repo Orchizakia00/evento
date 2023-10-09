@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: C: `undefined`
+#### Answer: B
 
-<i></i>
+<i>In the given code, there is a typo in the variable name. The variable is declared as let greeting; but is assigned a value using the incorrect spelling greetign = {};. JavaScript is case-sensitive, so greeting and greetign are considered different variables. As a result, greetign is not defined, leading to a ReferenceError when trying to log its value.</i>
 
 </p>
 </details>
@@ -128,3 +128,5 @@ console.log(count);
 
 </p>
 </details>
+
+
