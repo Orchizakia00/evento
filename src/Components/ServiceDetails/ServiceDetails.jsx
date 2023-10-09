@@ -4,14 +4,6 @@ import swal from 'sweetalert';
 
 const ServiceDetails = () => {
 
-    // const jobs = useLoaderData();
-    // const { id } = useParams();
-    // const idInt = parseInt(id);
-    // const job = jobs.find(job => job.id == idInt)
-    // console.log(id, jobs);
-
-    // const [service, setService] = useState({});
-
     const services = useLoaderData();
     const { id } = useParams();
     const service = services.find(service => service.id == id);
@@ -29,7 +21,7 @@ const ServiceDetails = () => {
                 <div className="card-body">
                     <h2 className="card-title text-3xl font-bold" data-aos="fade-up">{service.title}</h2>
                     <p data-aos="fade-up">{service.longDescription}</p>
-                    <p className="my-4"  data-aos="fade-up"><span className="font-bold">Price:</span> {service.price}</p>
+                    <p className="my-4" data-aos="fade-up"><span className="font-bold">Price:</span> {service.price}</p>
                     <div className="card-actions justify-start">
                         <button onClick={handleBook} className="btn btn-success text-white" data-aos="fade-up">Book Us</button>
                     </div>
