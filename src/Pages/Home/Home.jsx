@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import Banner from "../../Components/Banner/Banner";
 import Service from "../../Components/Service/Service";
 import customer1 from "../../assets/team-1.png"
@@ -21,13 +21,8 @@ const Home = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10 mx-auto">
                 {
-                    services.slice(0, 3).map(service => <Service key={service.id} service={service}></Service>)
+                    services.map(service => <Service key={service.id} service={service}></Service>)
                 }
-            </div>
-            <div className="text-center mb-10">
-                <Link to={'/services'}>
-                    <button className="btn btn-info text-white">See all</button>
-                </Link>
             </div>
 
             {/* upcoming events section */}

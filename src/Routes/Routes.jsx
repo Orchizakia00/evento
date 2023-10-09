@@ -1,15 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "../Layout/MainLayout";
-import Home from "../Pages/Home/Home";
-import About from "../Pages/About/About";
-import ErrorPage from "../Pages/ErrorPage/ErrorPage";
-import Services from "../Pages/Services/Services";
-import Login from "../Pages/Login/Login";
-import Register from "../Pages/Register/Register";
-import PrivateRoute from "./PrivateRoute";
 import ServiceDetails from "../Components/ServiceDetails/ServiceDetails";
+import MainLayout from "../Layout/MainLayout";
+import About from "../Pages/About/About";
+import Discount from "../Pages/Discount/Discount";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import Home from "../Pages/Home/Home";
+import Login from "../Pages/Login/Login";
 import Profile from "../Pages/Profile/Profile";
-import Dashboard from "../Pages/Dashboard/Dashboard";
+import Register from "../Pages/Register/Register";
+import Services from "../Pages/Services/Services";
+import PrivateRoute from "./PrivateRoute";
+import DiscountedServiceDetails from "../Components/DiscountedServiceDetails/DiscountedServiceDetails";
 
 
     const router = createBrowserRouter([
@@ -54,8 +55,13 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
                 element: <PrivateRoute><Profile></Profile></PrivateRoute>,
             },
             {
-                path: '/dashboard',
-                element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+                path: '/discount',
+                element: <PrivateRoute><Discount></Discount></PrivateRoute>,
+                loader: () => fetch('/data.json')
+            },
+            {
+                path: '/discountedservices/:id',
+                element: <PrivateRoute><DiscountedServiceDetails></DiscountedServiceDetails></PrivateRoute>,
                 loader: () => fetch('/data.json')
             }
           ]
