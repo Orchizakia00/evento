@@ -1,8 +1,14 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Evento - A fitness based event management website.
 
-Currently, two official plugins are available:
+This decription is to let you know about some features of this project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Here a user can see the services of the event management team.
+- To visit details page the user must be logged in to the website.
+- They can also see the details about the event by clicking on that specific service's read more button.
+- From there user can also book that event.
+- User can also log in with their google account. 
+- After logging in user can see some private routes including profile and dashboard.
+- There are also some information about the website in the about page.
+- In the home page user can see the upcoming events of this website and also see the reviews of the participated customers.
+
