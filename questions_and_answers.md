@@ -18,7 +18,7 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: B
+#### Answer: B: `ReferenceError: greetign is not defined`
 
 <i>In the given code, there is a typo in the variable name. The variable is declared as let greeting; but is assigned a value using the incorrect spelling greetign = {};. JavaScript is case-sensitive, so greeting and greetign are considered different variables. As a result, greetign is not defined, leading to a ReferenceError when trying to log its value.</i>
 
@@ -45,7 +45,7 @@ sum(1, "2");
 
 #### Answer: C: `"12"`
 
-<i>Write your explanation here</i>
+<i>In JavaScript, when the + operator is used with a string and a number, it performs string concatenation. In the given code, the function sum(1, "2") is called with a number 1 and a string "2". JavaScript converts the number 1 into a string and concatenates it with the string "2", resulting in the string "12"</i>
 
 </p>
 </details>
@@ -71,7 +71,7 @@ console.log(food);
 
 #### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Write your explanation here</i>
+<i>The info object is created with a property favoriteFood that initially references the first element of the food array, which is "🍕". However, later in the code, info.favoriteFood is reassigned to "🍝". This reassignment does not affect the original food array. When console.log(food) is executed, it prints the original food array, which remains unchanged.</i>
 
 </p>
 </details>
@@ -96,7 +96,7 @@ console.log(sayHi());
 
 #### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>The sayHi function expects a name parameter, but when it is called in console.log(sayHi()); without passing any argument, the name variable inside the function is undefined. JavaScript does not throw an error in this case; instead, it uses the default value of undefined for the name parameter. Therefore, the function returns "Hi there, undefined" when logged to the console.</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: D: 4
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>The forEach method iterates over each element in the nums array. In JavaScript, 0 is considered a falsy value, and all other numbers (including 1, 2, and 3 in this case) are truthy. The if (num) condition checks if the current element is truthy, and if it is, the count variable is incremented by 1. Since there are three truthy values (1, 2, and 3) in the array, the count variable becomes 3. When console.log(count) is executed, it prints the value of count, which is 3.</i>
 
 </p>
 </details>
